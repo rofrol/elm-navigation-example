@@ -1,0 +1,38 @@
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* flex */
+
+.flex {
+    display: flex
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* eliminiate jumping scrollbar https://aykevl.nl/2014/09/fix-jumping-scrollbar */
+/* html width cannot be 100%, container i.e. body cannot have width in percentage */
+
+
+@media screen and (min-width: 960px) {
+    html {
+         margin-left: calc(100vw - 100%);
+         width: auto;
+    }
+}
+
+/* other */
+
+body {
+  margin: 0 auto;
+  width: 960px;
+  font-size: 12px;
+  color: #2B2B2B;
+}

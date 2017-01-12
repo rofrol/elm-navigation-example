@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/normalize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <base href="/">
+  </head>
+  <body>
+    <script src="/js/elm.js"></script>
+    <script src="/js/env.js"></script>
+    <script>
+      var app = Elm.Main.fullscreen(Object.assign(env, { currentTime: Date.now() }));
+    </script>
+  </body>
+</html>
