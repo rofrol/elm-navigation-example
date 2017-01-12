@@ -4,8 +4,8 @@ I've created this example to have easy reference code how to use elm-lang/naviga
 
 This example is based on:
 
-- https://github.com/elm-lang/navigation/tree/master/examples
-- https://github.com/ohanhi/elm-taco
+- general structure taken from https://github.com/elm-lang/navigation/tree/master/examples
+- the routing part from https://github.com/ohanhi/elm-taco
 
 ## How to try
 
