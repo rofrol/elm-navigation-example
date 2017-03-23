@@ -4,6 +4,10 @@ var fs = require('fs-extra');
 var path = require('path');
 var root = path.normalize(__dirname + '/..');
 require('dotenv').config({path: root + '/.env'})
+if(typeof process.env.dist == 'undefined' || process.env.dist.trim() === '') {
+  console.log('You need to specify dist in .env');
+  process.exit(1);
+}
 var dist = path.normalize(root + '/' + process.env.dist);
 console.log(dist);
 
@@ -12,13 +16,7 @@ var env = {};
 // browsersync acts as proxy, so there can't be requests with host and port different:
 // No 'Access-Control-Allow-Origin' header is present on the requested resource
 // http://stackoverflow.com/questions/36912610/enable-cors-in-gulp-browsersync/41176541#41176541
-env.api_url = process.env.host;
-if(process.env.port != "")
-  env.api_url += ":" + process.env.port;
-env.api_url += process.env.api_base
-
-
-env.json_extension = process.env.json_extension;
+env.data_server = process.env.data_server;
 
 var file = path.normalize(dist + '/js/env.js');
 var str = 'var env = ' + JSON.stringify(env);

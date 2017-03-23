@@ -1,4 +1,4 @@
-## elm navigation example
+# elm navigation example
 
 I've created this example to have easy reference code how to use elm-lang/navigation without using hashes.
 
@@ -7,7 +7,7 @@ This example is based on:
 - general structure taken from https://github.com/elm-lang/navigation/tree/master/examples
 - the routing part from https://github.com/ohanhi/elm-taco
 
-## How to try
+## How to run
 
 To set up on your own computer, you will need `git`, `elm-0.18`, `node.js`, `yarnpkg`.
 

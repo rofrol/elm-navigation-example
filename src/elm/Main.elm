@@ -30,8 +30,7 @@ type alias Model =
 
 
 type alias Flags =
-    { api_url : String
-    , json_extension : String
+    { data_server : String
     , currentTime : Time
     }
 
@@ -82,7 +81,7 @@ view model =
         [ h1 [] [ text "Pages" ]
         , div [] [ text <| "unix epoch time " ++ (toString model.flags.currentTime) ]
         , ul [] (List.map viewLink [ HomeRoute, SettingsRoute ])
-        , ul [] [ li [] [ a [ href "/no_existing_link" ] [ text "non existing link" ] ] ]
+        , ul [] [ li [] [ a [ href "/non_existing_link" ] [ text "non existing link" ] ] ]
         , pageView model
         , h1 [] [ text "History" ]
         , ul [] (List.map viewLocation model.history)

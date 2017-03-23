@@ -8,7 +8,4 @@ cd $DIR/..
 cp -r src/images dist/ && \
 cp -r src/styles dist/ && \
 cp -r node_modules/normalize.css/normalize.css dist/styles && \
-mkdir -p dist/styles/font-awesome
-cp -r node_modules/font-awesome/css dist/styles/font-awesome/ && \
-cp -r node_modules/font-awesome/fonts dist/styles/font-awesome/ && \
 cp src/index.html dist
