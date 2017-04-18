@@ -19,7 +19,6 @@ Simply clone the repository and:
 ```bash
 $ git clone https://github.com/rofrol/elm-navigation-example.git
 $ cd elm-navigation-example
-$ yarn
 $ cp .env.example .env
 $ ./tools/build-dev.sh
 $ ./tools/server.js
