@@ -49,5 +49,5 @@ https://gist.github.com/rofrol/fd46e9570728193fddcc234094a0bd99#atom-editor-and-
 
 ## TODO
 
-- [ ] use query string
+- [ ] use query string https://stackoverflow.com/questions/43111085/evancz-url-parser-and-multiple-query-parameters
 - [ ] use ohanhi/elm-web-data
